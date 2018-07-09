@@ -3,12 +3,12 @@ define('HX_STATS', true);
 include dirname(__FILE__).'/system/hx_function.php';
 include dirname(__FILE__).'/system/hx_config.php';
 
-$sql = new Cmysqli($aDB['server'], $aDB['username'], $aDB['passwd'], $aDB['dbname']);
+$sql = new Class_mysqli($aDB['server'], $aDB['username'], $aDB['passwd'], $aDB['dbname']);
 $sContent='';
 
 $sGet = hx_get_string('f');
 if ($sGet) {
-	$aBuf = $sql->hx_query("SELECT * FROM `l4d2_stats` WHERE `Steamid` LIKE '".$sGet."'");
+	$aBuf = $sql->query_array("SELECT * FROM `l4d2_stats` WHERE `Steamid` LIKE '".$sGet."'");
 	if ($aBuf) {
 		foreach($aBuf as $a) {
 			if (!empty($a)) {
@@ -38,7 +38,7 @@ if ($sGet) {
 else {
 	$sContent ='<h2>Top players</h2>';
 	$sContent .='<form action="index.php" method="get"><input type="search" size="21" name="f" placeholder="STEAM_ID" maxlength="23"><button type="submit">Go</button></form><br>';
-	$aBuf = $sql->hx_query("SELECT `Steamid`, `Name`, `Points` FROM `l4d2_stats` ORDER BY `l4d2_stats`.`Points` DESC LIMIT 30");
+	$aBuf = $sql->query_array("SELECT `Steamid`, `Name`, `Points` FROM `l4d2_stats` ORDER BY `Points` DESC LIMIT 50");
 	if ($aBuf) {
 		$i=0;
 		foreach($aBuf as $a) {
@@ -53,7 +53,7 @@ else {
 	}
 }
 
-$tpl = new Ctemplate();
+$tpl = new Class_template();
 $tpl->set_title($aConf['title']);
 $tpl->set_description($aConf['description']);
 $tpl->set_keywords($aConf['keywords']);

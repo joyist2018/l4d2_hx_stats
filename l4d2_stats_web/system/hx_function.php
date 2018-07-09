@@ -1,7 +1,7 @@
 <?php
 if (!defined('HX_STATS')){exit();}
 
-class Ctemplate {
+class Class_template {
 	private $sBuf1='';
 	private $sBuf2='';
 	private $sBuf3='';
@@ -41,19 +41,17 @@ class Ctemplate {
 	}
 }
 
-class Cmysqli {
+class Class_mysqli {
 	private $hSQL;
-
 	public function __construct(&$host, &$user, &$pass, &$db) {
 		$this->hSQL = new mysqli($host, $user, $pass, $db);
 		$this->hSQL->set_charset('utf8');
 	}
-
 	public function __destruct() {
 		$this->hSQL->close();
 	}
 
-	public function hx_query($Buf) {
+	public function query_array($Buf) {
 		$aRow=array();
 		$i=0;
 
@@ -62,6 +60,7 @@ class Cmysqli {
 			while ($aRow[$i] = $h->fetch_assoc()) {
 				$i += 1;
 			}
+			$h->free();
 		}
 		if ($i) {
 			return $aRow;

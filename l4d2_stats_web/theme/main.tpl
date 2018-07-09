@@ -11,6 +11,6 @@
 <body>
 <div class="container">
 {hx_content}
-</div>
+</div><br>
 </body>
 </html>
