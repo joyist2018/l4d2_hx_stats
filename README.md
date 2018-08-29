@@ -8,11 +8,15 @@ stats_web：https://github.com/TyUser/l4d2_hx_stats
 用于Left 4 Dead 2（Co-op）玩家数据统计
 
 要求的MySQL统计数据
+
 •MySQL：如果您的MySQL服务器不在同一系统上，则需要外部连接！默认情况下不启用此功能，您可能需要与主机管理员联系！
+
 •Metamod：Source / SourceMM（最新版本）
+
 •SourceMod：1.8 - 1.9最新版本
 
 安装
+
 •编辑/addons/sourcemod/configs/databases.cfg文件并添加包含以下信息的部分：
 
 	"l4d2_stats"
@@ -25,6 +29,7 @@ stats_web：https://github.com/TyUser/l4d2_hx_stats
 	}
 
 •在游戏控制台中键入：
+
 sm_addsqlcreate	//初始化数据库,添加并创建sql
 
 
