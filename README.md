@@ -38,6 +38,7 @@ sm_addsqlcreate	//初始化数据库,添加并创建sql
 • !top - 显示前15名玩家数据统计。
 -
 附件：
+
 获取插件[http://www.sourcemod.net/vbcompiler.php?file_id=163444] (l4d2_hx_stats.smx - 12kb)
 
 获取源代码[https://forums.alliedmods.net/attachment.php?attachmentid=163444&d=1497518537] (l4d2_hx_stats.sp - 15.7 KB）
