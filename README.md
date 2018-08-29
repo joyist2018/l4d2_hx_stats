@@ -31,10 +31,14 @@ sm_addsqlcreate	//初始化数据库,添加并创建sql
 • !rank - 显示您当前的排名信息。
 • !top - 显示前15名玩家数据统计。
 -
-附加的文件
-获取插件[http://www.sourcemod.net/vbcompiler.php?file_id=163444] 或 获取源代码[l4d2_hx_stats.sp - 15.7 KB）
+附件：
+获取插件[http://www.sourcemod.net/vbcompiler.php?file_id=163444] (l4d2_hx_stats.smx - 12kb)
+
+获取源代码[https://forums.alliedmods.net/attachment.php?attachmentid=163444&d=1497518537] (l4d2_hx_stats.sp - 15.7 KB）
+
 最后由maks编辑; 17年6月15日在上午04时26分。
 
 
 =========
+
 同类型 https://forums.alliedmods.net/showthread.php?t=174289
