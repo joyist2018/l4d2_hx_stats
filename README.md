@@ -1,13 +1,14 @@
 # [L4D2] hx_stats 
 
 网站: https://forums.alliedmods.net/showthread.php?t=298535
+
 stats_web：https://github.com/TyUser/l4d2_hx_stats
 
 
 用于Left 4 Dead 2（Co-op）玩家数据统计
 
 要求的MySQL统计数据
-•MySQL：如果您的MySQL服务器不在同一系统上，则需要外部连接！默认情况下不启用此功能，您可能需要与主机联系！
+•MySQL：如果您的MySQL服务器不在同一系统上，则需要外部连接！默认情况下不启用此功能，您可能需要与主机管理员联系！
 •Metamod：Source / SourceMM（最新版本）
 •SourceMod：1.8 - 1.9最新版本
 
